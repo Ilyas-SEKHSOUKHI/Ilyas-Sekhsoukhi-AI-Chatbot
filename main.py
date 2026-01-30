@@ -51,16 +51,17 @@ def print_contacts():
 if __name__ == "__main__":
     print("""
 ====================================================================================================
- 🤖 ILYAS SEKHSOUKHI — AI VERSION
+ ILYAS SEKHSOUKHI — AI VERSION
 ====================================================================================================
- Si vous avez ennuyé de Ilyas Sekhsoukhi version humain ou s'il ne connaît pas la réponse 
- Vous pouvez me questionner : Ilyas Sekhsoukhi — version IA 
+ If you are tired of Ilyas Sekhsoukhi (human version) or if he doesn't know the answer 
+ You can question: Ilyas Sekhsoukhi — AI version 
 
- Commandes:
-  - info : afficher mes infos
-  - exit : quitter
+ Commands:
+  - info : show my information
+  - exit : quit
 ====================================================================================================
 """)
+
     history = [{"role": "system", "content": SYSTEM_PROMPT}]
     while True:
         user_input = input("==> You: ")
